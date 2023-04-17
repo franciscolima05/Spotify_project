@@ -1,0 +1,184 @@
+*body, header{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/duplet/Duplet-Bold-BF642a3406582e7.otf') format('truetype'); 
+}
+
+body{
+    background-color: #333232 ;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    background: #5f5b5b;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    .logo{
+        padding: 20px;
+    }
+
+    .nav-links{
+        width: 100%;
+        font-family: 'MyCustomFont';
+        list-style: none;
+        font-size: 25px;
+        display: flex;
+        margin-left: 880px;
+
+        li{
+            padding: 40px;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover{
+                color: green;
+            }
+        }
+    }
+}
+
+
+
+
+section{
+    h1{
+        position: absolute;
+        font-size: 70px;
+        font-family: 'MyCustomFont';
+        bottom: 250px;
+        left: 300px;
+        width: 500px;
+
+        span{
+            width: 40%;
+            padding: 10px;
+            border-bottom: 10px solid;
+            border-radius: 6px;
+            border-color: green;
+        }
+    }
+
+    div{
+
+        img{
+            position: absolute;
+            bottom: 200px;
+            right: 300px;
+            border-radius: 50px;
+        }
+        
+    }
+}
+
+.spacer{
+    position: absolute;
+    top: 1000px;
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url('../svg/layered-waves-haikei\ \(3\).svg');
+}
+
+.playlist{
+    p{
+        position: absolute;
+        font-size: 50px;
+        font-family: 'MyCustomFont';
+        bottom: -530px;
+        left: 30px;
+        border-bottom: 5px solid;
+        border-color: green;
+        border-radius: 5px;
+    }
+
+    .pl{
+        position: absolute;
+        bottom: -1100px;
+        width: 50%;
+        right: 500px;
+        height: 50%;
+    }
+}
+
+.pie{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -1400px;
+    background: #000;
+
+    .logo-footer{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+
+    .icons{
+        .icon-list{
+            position: absolute;
+            left: 1400px;
+            top: 15px;
+            width: 100px;
+            list-style: none;
+            display: flex;
+
+            li{
+                padding: 50px;
+        }
+    }
+}
+
+    .number{
+        .contacto{
+            position: absolute;
+            right: 1300px;
+            top: 30px;
+            font-size: 40px;
+            font-family: 'MyCustomFont';
+        }
+        p{
+            position: absolute;
+            right: 1100px;
+            top: 30px;
+            font-size: 30px;
+            color: white;
+            font-family: 'MyCustomFont';
+        }
+        .tele{
+            position: absolute;
+            right: 1100px;
+            top: 80px;
+            font-size: 30px;
+            color: white;
+        }
+    }
+
+    .download{
+        position: absolute;
+        right: 550px;
+        top: 50px;
+        color: white;
+        font-size: 30px;
+        font-family: 'MyCustomFont';
+
+        a{
+            color: green;
+        }
+    }
+
+}

@@ -15,7 +15,7 @@ body{
 nav{
     position: absolute;
     width: 100%;
-    background: #5f5b5b;
+    background: #3b3939;
     height: 80px;
     display: flex;
     align-items: center;
@@ -48,16 +48,29 @@ nav{
 }
 
 
+.spacer2{
+    position: absolute;
+    top: 80px;
+    aspect-ratio: 900/300;
+    width: 100%;
+    height: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.layer2{
+    background-image: url('../svg/wave-haikei.svg');
+}
 
 section{
     h1{
         position: absolute;
         font-size: 70px;
         font-family: 'MyCustomFont';
-        bottom: 250px;
+        bottom: 220px;
         left: 300px;
-        width: 500px;
+        width: 500px; 
 
         span{
             width: 40%;
@@ -72,7 +85,7 @@ section{
 
         img{
             position: absolute;
-            bottom: 200px;
+            bottom: 170px;
             right: 300px;
             border-radius: 50px;
         }
@@ -99,7 +112,7 @@ section{
         position: absolute;
         font-size: 50px;
         font-family: 'MyCustomFont';
-        bottom: -530px;
+        bottom: -570px;
         left: 30px;
         border-bottom: 5px solid;
         border-color: green;
@@ -108,10 +121,11 @@ section{
 
     .pl{
         position: absolute;
-        bottom: -1100px;
-        width: 50%;
+        bottom: -2100px;
+        width: 40%;
         right: 500px;
-        height: 50%;
+        height: 80%;
+        margin-bottom: 700px;
     }
 }
 
@@ -119,7 +133,7 @@ section{
     width: 100%;
     height: 200px;
     position: absolute;
-    bottom: -1400px;
+    bottom: -1700px;
     background: #000;
 
     .logo-footer{
@@ -181,4 +195,552 @@ section{
         }
     }
 
+}
+
+
+/* Contact */
+main{
+        h1{
+            position: absolute;
+            top: 140px;
+            right: 600px;
+            color: white;
+            font-family: 'MyCustomFont';
+            font-size: 90px;
+            width: 600px;
+        }
+
+        h5{
+            position: absolute;
+            top: 390px;
+            right: 850px;
+            font-size: 30px;
+            color: #221d1d;
+            font-family: 'MyCustomFont';
+        }
+
+        form{
+            position: absolute;
+            top: 550px;
+            right: 730px;
+            input{
+                height: 40px;
+                width: 490px;
+                border-radius: 30px;
+            }
+
+            .input-bar{
+                text-indent: 20px;
+                font-family: 'MyCustomFont';
+                font-size: 15px;
+            }
+        }
+}
+
+.pie-contact{
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        bottom: -100px;
+        background: #000;
+    
+        .logo-footer{
+            margin-top: 70px;
+            margin-left: 20px;
+        }
+    
+    
+        .icons{
+            .icon-list{
+                position: absolute;
+                left: 1400px;
+                top: 15px;
+                width: 100px;
+                list-style: none;
+                display: flex;
+    
+                li{
+                    padding: 50px;
+            }
+        }
+    }
+    
+        .number{
+            .contacto{
+                position: absolute;
+                right: 1300px;
+                top: 30px;
+                font-size: 40px;
+                font-family: 'MyCustomFont';
+            }
+            p{
+                position: absolute;
+                right: 1100px;
+                top: 30px;
+                font-size: 30px;
+                color: white;
+                font-family: 'MyCustomFont';
+            }
+            .tele{
+                position: absolute;
+                right: 1100px;
+                top: 80px;
+                font-size: 30px;
+                color: white;
+            }
+        }
+    
+        .download{
+            position: absolute;
+            right: 550px;
+            top: 50px;
+            color: white;
+            font-size: 30px;
+            font-family: 'MyCustomFont';
+    
+            a{
+                color: green;
+            }
+        }
+    
+}
+    
+
+
+
+/* About us */
+
+.navbar-us{
+    background-color: transparent;
+}
+
+.container{
+    height: 150vh;
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(45deg, #000000,#2dda1c,#ffffff);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+
+
+    @keyframes color{
+        0%{
+            background-position: 0 50%;
+        }
+
+        50%{
+            background-position: 0 50%;
+        }
+
+        100%{
+            background-position: 0 50%;
+        }
+    }
+
+    h1{
+        opacity: 0;
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        font-size: 110px;
+        font-family: 'MyCustomFont';
+        width: 600px;
+        color: #141414;
+        animation: slide-right 2s ease-in-out forwards;  
+    }
+
+    @keyframes slide-right{
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateX(50px);
+        }
+    }
+
+    img{
+        position: absolute;
+        border-radius: 30px;
+        top: 250px;
+        right: 200px;
+        height: 700px;
+        width: 500px;
+        animation: appear 2s ease-in-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes appear{
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 0.85;
+        }
+    }
+}
+
+.main-content{
+    p{
+        font-family: 'MyCustomFont';
+        color: white;
+        width: 500px;
+        font-size: 30px;
+        position:absolute;
+        top: 600px;
+        left: 250px;
+        text-align: center;
+        animation: slide 2s ease-in-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes slide{
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+
+    .join{
+        font-family: 'MyCustomFont';
+        color: white;
+        width: 500px;
+        font-size: 30px;
+        position:absolute;
+        top: 870px;
+        left: 250px;
+        text-align: center;
+        animation: slide 2s ease-in-out forwards;
+        opacity: 0;
+        animation: slide 2s ease-in-out forwards;
+        opacity: 0;
+    }
+    
+    @keyframes slide{
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.bubble{
+    background: white;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    top: 1100px;
+    border-radius: 10000000px;
+    animation: fade-in 2.5s ease-in-out forwards;
+    opacity: 0;
+
+    @keyframes fade-in {
+
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+        }
+        
+    }
+
+    h3{
+        font-family: 'MyCustomFont';
+        font-size: 70px;
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        position: absolute;
+    
+        .icon1{
+            position: absolute;
+            left: 250px;
+            top: -40px;
+            border: 3px solid;
+            border-radius: 20px;
+            padding: 10px;
+            width: 380px;
+            height: 400px;
+            text-align: center;
+
+            ul{
+                font-family: 'MyCustomFont';
+                list-style: circle;
+                text-align: center;
+                padding: 30px;
+                display: block;
+                font-size: 18px;
+            }
+        }
+        .icon2{
+            position: absolute;
+            left: 780px;
+            top: -40px;
+            border: 3px solid;
+            border-radius: 20px;
+            padding: 10px;
+            width: 380px;
+            height: 400px;
+            text-align: center;
+
+            ul{
+                font-family: 'MyCustomFont';
+                list-style: circle;
+                text-align: center;
+                padding: 30px;
+                display: block;
+                font-size: 18px;
+            }
+            
+        }
+        .icon3{
+            position: absolute;
+            left: 1300px;
+            top: -40px;
+            border: 3px solid;
+            border-radius: 20px;
+            padding: 10px;
+            width: 380px;
+            height: 400px;
+            text-align: center;
+        
+            ul{
+                font-family: 'MyCustomFont';
+                list-style: circle;
+                text-align: center;
+                padding: 30px;
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }   
+}
+
+.pie-AU{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -1200px;
+    background: #000;
+
+    .logo-footer{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+
+    .icons{
+        .icon-list{
+            position: absolute;
+            left: 1400px;
+            top: 15px;
+            width: 100px;
+            list-style: none;
+            display: flex;
+
+            li{
+                padding: 50px;
+        }
+    }
+}
+
+    .number{
+        .contacto{
+            position: absolute;
+            right: 1300px;
+            top: 30px;
+            font-size: 40px;
+            font-family: 'MyCustomFont';
+        }
+        p{
+            position: absolute;
+            right: 1100px;
+            top: 30px;
+            font-size: 30px;
+            color: white;
+            font-family: 'MyCustomFont';
+        }
+        .tele{
+            position: absolute;
+            right: 1100px;
+            top: 80px;
+            font-size: 30px;
+            color: white;
+        }
+    }
+
+    .download{
+        position: absolute;
+        right: 550px;
+        top: 50px;
+        color: white;
+        font-size: 30px;
+        font-family: 'MyCustomFont';
+
+        a{
+            color: green;
+        }
+    }
+}
+
+/* Catalog */
+
+.nav-CTLG{
+    background: transparent;
+
+    .nav-links{
+
+        li{
+            a:hover{
+                color:#FF5F9E ;
+            }
+        }
+    }
+}
+
+.container-CTLG{
+    height: 150vh;
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(45deg, #060047,#B3005E,#ffffff);
+    background-size: 300% 300%;
+
+    h1{
+        position: absolute;
+        top: 200px;
+        right: 450px;
+        font-size: 100px;
+        font-family: 'MyCustomFont';
+        opacity: 0;
+        animation: slide 2s ease-in-out forwards;
+    }
+
+    @keyframes slide {
+
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        
+        to{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    .content-CTLG{
+        font-family: 'MyCustomFont';
+        font-size: 40px;
+        position: absolute;
+        top: 500px;
+        left: 425px;
+        width: 1000px;
+        max-height: 100px;
+        text-align: center;
+        opacity: 0;
+        animation: slide 2s ease-in-out forwards;
+    }
+
+    @keyframes slide {
+
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        
+        to{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    .lists{
+        opacity: 0;
+        animation: slide 2s ease-in-out forwards;
+
+
+        .rap{
+            position: absolute;
+            top: 1000px;
+            left: 50px;
+            height: 700px;
+        }
+
+        .rock{
+            position: absolute;
+            top: 1000px;
+            left: 500px;
+            height: 700px;
+        }
+
+        .pop{
+            position: absolute;
+            top: 1000px;
+            left: 1030px;
+            height: 700px;
+        }
+
+        .RyB{
+            position: absolute;
+            top: 1000px;
+            left: 1470px;
+            height: 700px;
+        }
+    }
+
+    @keyframes slide {
+
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        
+        to{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    h3{
+        font-family: 'MyCustomFont';
+        position: absolute;
+        bottom: -900px;
+        font-size: 50px;
+        left: 450px;
+        border-bottom: 10px #f3176f solid;
+        border-radius: 5px;
+        opacity: 0;
+        animation: slide 2s ease-in-out forwards;
+    }
+
+    @keyframes slide {
+
+        from{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        
+        to{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
 }

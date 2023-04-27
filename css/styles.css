@@ -14,7 +14,7 @@ body {
 nav {
   position: absolute;
   width: 100%;
-  background: #5f5b5b;
+  background: #3b3939;
   height: 80px;
   display: flex;
   align-items: center;
@@ -41,11 +41,26 @@ nav .nav-links li a:hover {
   color: green;
 }
 
+.spacer2 {
+  position: absolute;
+  top: 80px;
+  aspect-ratio: 900/300;
+  width: 100%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer2 {
+  background-image: url("../svg/wave-haikei.svg");
+}
+
 section h1 {
   position: absolute;
   font-size: 70px;
   font-family: "MyCustomFont";
-  bottom: 250px;
+  bottom: 220px;
   left: 300px;
   width: 500px;
 }
@@ -58,7 +73,7 @@ section h1 span {
 }
 section div img {
   position: absolute;
-  bottom: 200px;
+  bottom: 170px;
   right: 300px;
   border-radius: 50px;
 }
@@ -81,7 +96,7 @@ section div img {
   position: absolute;
   font-size: 50px;
   font-family: "MyCustomFont";
-  bottom: -530px;
+  bottom: -570px;
   left: 30px;
   border-bottom: 5px solid;
   border-color: green;
@@ -89,17 +104,18 @@ section div img {
 }
 .playlist .pl {
   position: absolute;
-  bottom: -1100px;
-  width: 50%;
+  bottom: -2100px;
+  width: 40%;
   right: 500px;
-  height: 50%;
+  height: 80%;
+  margin-bottom: 700px;
 }
 
 .pie {
   width: 100%;
   height: 200px;
   position: absolute;
-  bottom: -1400px;
+  bottom: -1700px;
   background: #000;
 }
 .pie .logo-footer {
@@ -149,6 +165,465 @@ section div img {
 }
 .pie .download a {
   color: green;
+}
+
+/* Contact */
+main h1 {
+  position: absolute;
+  top: 140px;
+  right: 600px;
+  color: white;
+  font-family: "MyCustomFont";
+  font-size: 90px;
+  width: 600px;
+}
+main h5 {
+  position: absolute;
+  top: 390px;
+  right: 850px;
+  font-size: 30px;
+  color: #221d1d;
+  font-family: "MyCustomFont";
+}
+main form {
+  position: absolute;
+  top: 550px;
+  right: 730px;
+}
+main form input {
+  height: 40px;
+  width: 490px;
+  border-radius: 30px;
+}
+main form .input-bar {
+  text-indent: 20px;
+  font-family: "MyCustomFont";
+  font-size: 15px;
+}
+
+.pie-contact {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -100px;
+  background: #000;
+}
+.pie-contact .logo-footer {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.pie-contact .icons .icon-list {
+  position: absolute;
+  left: 1400px;
+  top: 15px;
+  width: 100px;
+  list-style: none;
+  display: flex;
+}
+.pie-contact .icons .icon-list li {
+  padding: 50px;
+}
+.pie-contact .number .contacto {
+  position: absolute;
+  right: 1300px;
+  top: 30px;
+  font-size: 40px;
+  font-family: "MyCustomFont";
+}
+.pie-contact .number p {
+  position: absolute;
+  right: 1100px;
+  top: 30px;
+  font-size: 30px;
+  color: white;
+  font-family: "MyCustomFont";
+}
+.pie-contact .number .tele {
+  position: absolute;
+  right: 1100px;
+  top: 80px;
+  font-size: 30px;
+  color: white;
+}
+.pie-contact .download {
+  position: absolute;
+  right: 550px;
+  top: 50px;
+  color: white;
+  font-size: 30px;
+  font-family: "MyCustomFont";
+}
+.pie-contact .download a {
+  color: green;
+}
+
+/* About us */
+.navbar-us {
+  background-color: transparent;
+}
+
+.container {
+  height: 150vh;
+  width: 100%;
+  height: 2000px;
+  background: linear-gradient(45deg, #000000, #2dda1c, #ffffff);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.container h1 {
+  opacity: 0;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  font-size: 110px;
+  font-family: "MyCustomFont";
+  width: 600px;
+  color: #141414;
+  animation: slide-right 2s ease-in-out forwards;
+}
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+}
+.container img {
+  position: absolute;
+  border-radius: 30px;
+  top: 250px;
+  right: 200px;
+  height: 700px;
+  width: 500px;
+  animation: appear 2s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+
+.main-content p {
+  font-family: "MyCustomFont";
+  color: white;
+  width: 500px;
+  font-size: 30px;
+  position: absolute;
+  top: 600px;
+  left: 250px;
+  text-align: center;
+  animation: slide 2s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+.main-content .join {
+  font-family: "MyCustomFont";
+  color: white;
+  width: 500px;
+  font-size: 30px;
+  position: absolute;
+  top: 870px;
+  left: 250px;
+  text-align: center;
+  animation: slide 2s ease-in-out forwards;
+  opacity: 0;
+  animation: slide 2s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.bubble {
+  background: white;
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  top: 1100px;
+  border-radius: 10000000px;
+  animation: fade-in 2.5s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bubble h3 {
+  font-family: "MyCustomFont";
+  font-size: 70px;
+  text-align: center;
+}
+.bubble ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+}
+.bubble ul .icon1 {
+  position: absolute;
+  left: 250px;
+  top: -40px;
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 380px;
+  height: 400px;
+  text-align: center;
+}
+.bubble ul .icon1 ul {
+  font-family: "MyCustomFont";
+  list-style: circle;
+  text-align: center;
+  padding: 30px;
+  display: block;
+  font-size: 18px;
+}
+.bubble ul .icon2 {
+  position: absolute;
+  left: 780px;
+  top: -40px;
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 380px;
+  height: 400px;
+  text-align: center;
+}
+.bubble ul .icon2 ul {
+  font-family: "MyCustomFont";
+  list-style: circle;
+  text-align: center;
+  padding: 30px;
+  display: block;
+  font-size: 18px;
+}
+.bubble ul .icon3 {
+  position: absolute;
+  left: 1300px;
+  top: -40px;
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+  width: 380px;
+  height: 400px;
+  text-align: center;
+}
+.bubble ul .icon3 ul {
+  font-family: "MyCustomFont";
+  list-style: circle;
+  text-align: center;
+  padding: 30px;
+  display: block;
+  font-size: 18px;
+}
+
+.pie-AU {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -1200px;
+  background: #000;
+}
+.pie-AU .logo-footer {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.pie-AU .icons .icon-list {
+  position: absolute;
+  left: 1400px;
+  top: 15px;
+  width: 100px;
+  list-style: none;
+  display: flex;
+}
+.pie-AU .icons .icon-list li {
+  padding: 50px;
+}
+.pie-AU .number .contacto {
+  position: absolute;
+  right: 1300px;
+  top: 30px;
+  font-size: 40px;
+  font-family: "MyCustomFont";
+}
+.pie-AU .number p {
+  position: absolute;
+  right: 1100px;
+  top: 30px;
+  font-size: 30px;
+  color: white;
+  font-family: "MyCustomFont";
+}
+.pie-AU .number .tele {
+  position: absolute;
+  right: 1100px;
+  top: 80px;
+  font-size: 30px;
+  color: white;
+}
+.pie-AU .download {
+  position: absolute;
+  right: 550px;
+  top: 50px;
+  color: white;
+  font-size: 30px;
+  font-family: "MyCustomFont";
+}
+.pie-AU .download a {
+  color: green;
+}
+
+/* Catalog */
+.nav-CTLG {
+  background: transparent;
+}
+.nav-CTLG .nav-links li a:hover {
+  color: #FF5F9E;
+}
+
+.container-CTLG {
+  height: 150vh;
+  width: 100%;
+  height: 2000px;
+  background: linear-gradient(45deg, #060047, #B3005E, #ffffff);
+  background-size: 300% 300%;
+}
+.container-CTLG h1 {
+  position: absolute;
+  top: 200px;
+  right: 450px;
+  font-size: 100px;
+  font-family: "MyCustomFont";
+  opacity: 0;
+  animation: slide 2s ease-in-out forwards;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.container-CTLG .content-CTLG {
+  font-family: "MyCustomFont";
+  font-size: 40px;
+  position: absolute;
+  top: 500px;
+  left: 425px;
+  width: 1000px;
+  max-height: 100px;
+  text-align: center;
+  opacity: 0;
+  animation: slide 2s ease-in-out forwards;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.container-CTLG .lists {
+  opacity: 0;
+  animation: slide 2s ease-in-out forwards;
+}
+.container-CTLG .lists .rap {
+  position: absolute;
+  top: 1000px;
+  left: 50px;
+  height: 700px;
+}
+.container-CTLG .lists .rock {
+  position: absolute;
+  top: 1000px;
+  left: 500px;
+  height: 700px;
+}
+.container-CTLG .lists .pop {
+  position: absolute;
+  top: 1000px;
+  left: 1030px;
+  height: 700px;
+}
+.container-CTLG .lists .RyB {
+  position: absolute;
+  top: 1000px;
+  left: 1470px;
+  height: 700px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.container-CTLG h3 {
+  font-family: "MyCustomFont";
+  position: absolute;
+  bottom: -900px;
+  font-size: 50px;
+  left: 450px;
+  border-bottom: 10px #f3176f solid;
+  border-radius: 5px;
+  opacity: 0;
+  animation: slide 2s ease-in-out forwards;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

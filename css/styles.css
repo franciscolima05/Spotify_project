@@ -626,4 +626,74 @@ main form .input-bar {
   }
 }
 
+/* MEDIA QUERIES */
+/* Home */
+@media (max-width: 820px) {
+  header nav {
+    width: 100%;
+  }
+  header nav .nav-links {
+    width: 500px;
+    height: 115px;
+  }
+  header nav .nav-links li {
+    transform: translateX(-900px);
+  }
+  header nav .nav-links .home {
+    display: none;
+  }
+  section {
+    align-items: center;
+  }
+  section div {
+    display: none;
+  }
+  section h1 {
+    top: 200px;
+    width: 800px;
+    left: 30px;
+    justify-content: center;
+    font-size: 90px;
+  }
+  section h1 span {
+    margin-left: 30px;
+  }
+  .spacer2 {
+    height: 800px;
+  }
+  .spacer {
+    position: absolute;
+    top: 800px;
+  }
+  .playlist {
+    margin-bottom: 0;
+  }
+  .playlist p {
+    position: absolute;
+    width: 700px;
+    bottom: 0px;
+  }
+  .playlist .pl {
+    position: absolute;
+    top: 1200px;
+    width: 600px;
+    margin-bottom: 0;
+    left: 110px;
+  }
+  .pie {
+    position: absolute;
+    bottom: -1200px;
+    margin-bottom: 0px;
+  }
+  .pie .icons {
+    transform: translateX(-1100px);
+    position: absolute;
+    top: 0px;
+  }
+  .pie .download {
+    display: none;
+  }
+  /* Catalog */
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -58,11 +58,13 @@ nav .nav-links li a:hover {
 
 section h1 {
   position: absolute;
-  font-size: 70px;
+  font-size: 90px;
   font-family: "MyCustomFont";
   bottom: 220px;
   left: 300px;
-  width: 500px;
+  width: 700px;
+  animation: fade 2s ease-in-out forwards;
+  opacity: 0;
 }
 section h1 span {
   width: 40%;
@@ -73,9 +75,11 @@ section h1 span {
 }
 section div img {
   position: absolute;
-  bottom: 170px;
-  right: 300px;
+  bottom: 240px;
+  right: 250px;
   border-radius: 50px;
+  opacity: 0;
+  animation: fade 2s ease-in-out forwards;
 }
 
 .spacer {
@@ -101,6 +105,7 @@ section div img {
   border-bottom: 5px solid;
   border-color: green;
   border-radius: 5px;
+  animation: fade 2s ease-in-out forwards;
 }
 .playlist .pl {
   position: absolute;
@@ -109,8 +114,19 @@ section div img {
   right: 500px;
   height: 80%;
   margin-bottom: 700px;
+  animation: fade 2s ease-in-out forwards;
 }
 
+@keyframes fade {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 .pie {
   width: 100%;
   height: 200px;
@@ -369,7 +385,7 @@ main form .input-bar {
 }
 
 .bubble {
-  background: white;
+  background: black;
   height: 800px;
   width: 100%;
   position: absolute;
@@ -390,11 +406,13 @@ main form .input-bar {
   font-family: "MyCustomFont";
   font-size: 70px;
   text-align: center;
+  color: white;
 }
 .bubble ul {
   list-style: none;
   display: flex;
   position: absolute;
+  color: white;
 }
 .bubble ul .icon1 {
   position: absolute;
@@ -694,6 +712,115 @@ main form .input-bar {
     display: none;
   }
   /* Catalog */
+  .nav-CTLG {
+    transform: translateX(20px);
+  }
+  .nav-CTLG .catalog-cg {
+    display: none;
+  }
+  .container-CTLG h1 {
+    font-size: 130px;
+    width: 500px;
+    position: absolute;
+    left: 180px;
+  }
+  .container-CTLG .content-CTLG {
+    position: absolute;
+    top: 1000px;
+    font-size: 50px;
+    width: 600px;
+    left: 100px;
+  }
+  .lists {
+    display: none;
+  }
+  .subtitle {
+    display: none;
+  }
+  .pie-AU {
+    position: absolute;
+    bottom: -1000px;
+    margin-bottom: -200px;
+    height: 400px;
+  }
+  .pie-AU .icons {
+    transform: translateX(-1100px);
+    position: absolute;
+    top: 0px;
+  }
+  .pie-AU .download {
+    display: none;
+  }
+  /*About*/
+  .about-bt {
+    display: none;
+  }
+  .container {
+    height: 450vh;
+  }
+  .container h1 {
+    position: absolute;
+    left: 130px;
+  }
+  .container img {
+    position: absolute;
+    top: 1350px;
+    left: 170px;
+  }
+  .main-content {
+    position: absolute;
+    left: -75px;
+    top: 30px;
+  }
+  .main-content p {
+    font-size: 35px;
+  }
+  .main-content .join {
+    font-size: 35px;
+    margin-top: 150px;
+  }
+  .bubble {
+    position: absolute;
+    top: 2300px;
+    border-radius: 20px;
+    height: 220%;
+  }
+  .bubble ul .icon1 {
+    height: 620px;
+    width: 650px;
+    transform: translateX(-220px);
+    padding: 50px;
+  }
+  .bubble ul .icon1 ul li {
+    font-size: xx-large;
+  }
+  .bubble ul .icon2 {
+    height: 700px;
+    width: 650px;
+    position: absolute;
+    top: 800px;
+    left: 35px;
+    padding: 50px;
+  }
+  .bubble ul .icon2 ul li {
+    font-size: xx-large;
+  }
+  .bubble ul .icon3 {
+    height: 300px;
+    width: 650px;
+    position: absolute;
+    padding: 50px;
+    top: 1650px;
+    left: 35px;
+  }
+  .bubble ul .icon3 ul li {
+    font-size: xx-large;
+  }
+  .pie-AU {
+    position: absolute;
+    bottom: -4000px;
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
